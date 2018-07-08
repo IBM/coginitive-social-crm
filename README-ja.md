@@ -38,8 +38,6 @@
 
 ## 利用した技術
 
-。
-
 * [Artificial Intelligence](https://medium.com/ibm-data-science-experience): 人工知能を分散したソリューション空間に適用して、破壊的技術(新しい価値基準の下で従来よりも優れた特長を持つ新技術)を提供します。
 * [Databases](https://en.wikipedia.org/wiki/IBM_Information_Management_System#.22Full_Function.22_databases): データの収集を格納および管理するためのリポジトリ。
 * [Node.js](https://nodejs.org/): サーバー側でJavaScriptコードを実行するためのオープンソースのJavaScriptランタイム環境。
