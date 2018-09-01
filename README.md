@@ -221,10 +221,9 @@ Use the name of the application you created previously to update the configurati
   $ bx cf push <name of client app from manifest.yml>
   ```
 6. Go to IBM console and select `<name of server app>` from `Cloud Foundry Applications` section and then click `Runtime` from left menu, select `Environment Variables` tab and provide the correct `environment variables` as shown below. Click `Save` which will restart the server application.
-
 ![](doc/source/images/env_variables.png)
 
-5. The application should now be running on IBM Cloud and listening to Tweets.  You can access the application URL using the application name you defined in the `manifest.yml` file with a '.mybluemix.net' appended to it.
+7. The application should now be running on IBM Cloud and listening to Tweets.  You can access the application URL using the application name you defined in the `manifest.yml` file with a '.mybluemix.net' appended to it.
 
 
 #### Running the app locally
