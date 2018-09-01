@@ -15,7 +15,7 @@
     "preinstall:server": "cd server && rm -rf dist",
     "build:client": "cd client && npm run build",
     "build:server": "cd server && npm run build",
-    "build:prod": "concurrently \"npm run build:clientProd\" \"npm run build:serverProd\"",
+    "build:prod": "concurrently \"npm run preinstall:client\" \"npm run preinstall:server\" && concurrently \"npm run build:clientProd\" \"npm run build:serverProd\"",
     "build:clientProd": "cd client && npm run build:prod",
     "build:serverProd": "cd server && npm run build",
     "test:server": "cd server && ./node_modules/.bin/mocha -r ts-node/register test/**/*.ts",
