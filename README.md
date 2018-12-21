@@ -101,13 +101,13 @@ Either Setup the IBM Cloud Deployment or Setup Local Deployment.
 
 > Explanation: You will create the  IBM Cloud services and configure them to use on a locally running server app.
 
-If you do not already have a IBM Cloud account, [sign up for Bluemix](https://console.bluemix.net/registration).
+If you do not already have a IBM Cloud account, [sign up for Bluemix](https://cloud.ibm.com/registration).
 Create the following services:
 
-* [**Watson Assistant**](https://console.bluemix.net/catalog/services/watson-assistant-formerly-conversation)
-* [**Watson Tone Analyzer**](https://console.bluemix.net/catalog/services/tone-analyzer)
-* [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
-* [**IBM Cloudant DB**](https://console.bluemix.net/catalog/services/cloudant-nosql-db)
+* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/watson-assistant-formerly-conversation)
+* [**Watson Tone Analyzer**](https://cloud.ibm.com/catalog/services/tone-analyzer)
+* [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
+* [**IBM Cloudant DB**](https://cloud.ibm.com/catalog/services/cloudant-nosql-db)
 
 ### 5. Import the Assistant workspace
 
@@ -193,7 +193,7 @@ Either `Run the app on IBM Cloud` or `Run the app locally`.
 
 Before you deploy to cloud you need to create the services as the same name you defined in `manifest.yml`. You can create the services using the IBM Cloud CLI. Make sure you install IBM Cloud CLI tools using:
 
-(https://console.bluemix.net/docs/cli/index.html#overview)[https://console.bluemix.net/docs/cli/index.html#overview]
+(https://cloud.ibm.com/docs/cli/index.html#overview)[https://cloud.ibm.com/docs/cli/index.html#overview]
 
 and run the following command using terminal:
 

@@ -103,8 +103,8 @@ IBM Cloud デプロイメント、もしくは Local デプロイメントのい
 
 > 説明: 最初に IBM Cloud にプレースホルダー・アプリケーションを作成し、必要なすべてのサービスを接続します。
 
-1. IBM Cloudアカウントをまだお持ちでない場合は、 [サインアップ](https://console.bluemix.net/registration) してください。
-2. [Cloud Foundry CLI](https://console.bluemix.net/docs/cli/index.html#cli) ツールをダウンロードしてインストールします。
+1. IBM Cloudアカウントをまだお持ちでない場合は、 [サインアップ](https://cloud.ibm.com/registration) してください。
+2. [Cloud Foundry CLI](https://cloud.ibm.com/docs/cli/index.html#cli) ツールをダウンロードしてインストールします。
 3. IBM Cloud に自身のアカウントでログインします。
 4. `Application Dashboard` から `Application` を新規作成します。
   - 左側にある `Apps` > `Cloudfoundry Apps` を選択。
@@ -118,12 +118,12 @@ IBM Cloud デプロイメント、もしくは Local デプロイメントのい
 
 >説明: IBM Cloud サービスを作成し、ローカルに稼働するサーバー・アプリで使用するように構成します。
 
-IBM Cloudアカウントをまだお持ちでない場合は、 [サインアップ](https://console.bluemix.net/registration) してください。ログインして以下のサービスを作成します。
+IBM Cloudアカウントをまだお持ちでない場合は、 [サインアップ](https://cloud.ibm.com/registration) してください。ログインして以下のサービスを作成します。
 
-* [**Watson Assistant**](https://console.bluemix.net/catalog/services/conversation)
-* [**Watson Tone Analyzer**](https://console.bluemix.net/catalog/services/tone-analyzer)
-* [**Watson Natural Language Understanding**](https://console.bluemix.net/catalog/services/natural-language-understanding)
-* [**IBM Cloudant DB**](https://console.bluemix.net/catalog/services/cloudant-nosql-db)
+* [**Watson Assistant**](https://cloud.ibm.com/catalog/services/conversation)
+* [**Watson Tone Analyzer**](https://cloud.ibm.com/catalog/services/tone-analyzer)
+* [**Watson Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
+* [**IBM Cloudant DB**](https://cloud.ibm.com/catalog/services/cloudant-nosql-db)
 
 <a name="5-import-the-conversation-workspace"></a>
 ### 5. Assistant ワークスペースをインポートする
@@ -209,7 +209,7 @@ $ npm run setup
 
 このアクションは、Twitterに接続するだけでなく、つぶやきを購読するのに必要なパラメータで設定を更新します。dev.twitter.com からコンシューマーキー(APIキー)、コンシューマーシークレット(APIシークレット)、アクセストークン、アクセストークンシークレットを入手する必要があります。
 
-この時点で、あなたがTwitterをどのように処理して「聞いている(listening)」かを決める必要があります。この旅の [Watson Assistant インテント](https://console.bluemix.net/docs/services/conversation/intents.html#defining-intents) は、航空会社の Twitter アカウントで動作するように設定されていますが、あなたが望むビジネスドメインの関連するインテントを作成できます。Twitterのハンドルは、他の人々がつぶやく宛先のようなものになります。たとえば、[`@aircanada`](https://twitter.com/AirCanada) です。この値は、Twitter があなたにツイートを送信するためのトリガーとして使用するものです。
+この時点で、あなたがTwitterをどのように処理して「聞いている(listening)」かを決める必要があります。この旅の [Watson Assistant インテント](https://cloud.ibm.com/docs/services/conversation/intents.html#defining-intents) は、航空会社の Twitter アカウントで動作するように設定されていますが、あなたが望むビジネスドメインの関連するインテントを作成できます。Twitterのハンドルは、他の人々がつぶやく宛先のようなものになります。たとえば、[`@aircanada`](https://twitter.com/AirCanada) です。この値は、Twitter があなたにツイートを送信するためのトリガーとして使用するものです。
 
 >注記：大量のAPI呼び出しの可能性があるため、このアクセラレータは IBM Cloud への有料サブスクリプションで使用するのが効果的です。たくさんのつぶやきを生成するスクリーンネームにこのアクセラレータを使用しようとすると、API呼び出しの無償割り当てを非常に迅速に使い切る危険性があります。エンリッチメントパイプラインからエラーが返された場合、アクセラレータはつぶやきを聴くことを15分間停止します。UIでの受信者が一時停止されている場合は、通常、1日の上限を超えたことを意味します。
 
